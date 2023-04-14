@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="LoginFormContest" prefHeight="700.0" prefWidth="1086.0" style="-fx-background-color: #3C2C3E;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel.controller.LoginFormController">
+   <children>
+      <AnchorPane layoutX="723.0" layoutY="146.0" prefHeight="549.0" prefWidth="369.0" style="-fx-background-color: #002B5B; -fx-background-radius: 10; -fx-border-color: #9A208C;">
+         <children>
+            <JFXTextField fx:id="txtUserName" layoutX="15.0" layoutY="152.0" prefHeight="31.0" prefWidth="300.0" promptText="User Name:-" style="-fx-background-color: white;" />
+            <Label alignment="CENTER" layoutX="60.0" layoutY="14.0" prefHeight="42.0" prefWidth="254.0" text="WELCOME....!" textFill="#68e421">
+               <font>
+                  <Font name="Poor Richard" size="36.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnLogin" alignment="CENTER" buttonType="RAISED" layoutX="209.0" layoutY="359.0" onAction="#btnLoginOnAction" prefHeight="44.0" prefWidth="112.0" style="-fx-background-color: #539165; -fx-background-radius: 10;" text="Login" textFill="#c1cfd7">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <Separator layoutX="8.0" layoutY="65.0" prefHeight="4.0" prefWidth="313.0" />
+            <CheckBox fx:id="CheckBoxPassword" layoutX="15.0" layoutY="283.0" mnemonicParsing="false" onMouseClicked="#changeVisibility" style="-fx-background-color: #EBB02D;" text="Show Password" textFill="#11110b">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </CheckBox>
+            <JFXTextField fx:id="txtPasswordHidden" layoutX="15.0" layoutY="222.0" prefHeight="43.0" prefWidth="300.0" unFocusColor="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtPassword" layoutX="15.0" layoutY="228.0" prefHeight="37.0" prefWidth="300.0" promptText="Password:-" style="-fx-background-color: white;" unFocusColor="#251e1e" />
+         </children></AnchorPane>
+      <Label alignment="CENTER" layoutX="98.0" layoutY="14.0" prefHeight="46.0" prefWidth="877.0" text="Hostel Management System" textFill="#e067de">
+         <font>
+            <Font name="Elephant" size="36.0" />
+         </font>
+      </Label>
+      <Line endX="863.0" endY="-1.52587890625E-5" layoutX="140.0" layoutY="67.0" startX="-38.0" startY="-1.52587890625E-5" stroke="#a14646" />
+      <ImageView fitHeight="549.0" fitWidth="717.0" layoutX="6.0" layoutY="146.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assest/images/hostel.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

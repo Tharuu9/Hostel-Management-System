@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="LoginDetailsContent" prefHeight="594.0" prefWidth="818.0" style="-fx-background-color: #3C2C3E;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel.controller.LoginDetailsFormController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" style="-fx-border-color: #191825;" text="Login Details" textFill="#979ea1">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="60.0" text="Change UserName | Change Password" textFill="#c9acac">
+         <font>
+            <Font name="Bernard MT Condensed" size="14.0" />
+         </font>
+      </Label>
+      <Line endX="735.0" layoutX="77.0" layoutY="85.0" startX="-77.0" stroke="#30b986" />
+      <JFXButton fx:id="btnAddNewUser" buttonType="RAISED" layoutX="556.0" layoutY="20.0" onAction="#btnAddNewUserOnAction" prefHeight="53.0" prefWidth="134.0" style="-fx-background-radius: 10; -fx-background-color: #6867AC;" text="+New" textFill="#ffcbcb">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtUserId" layoutX="50.0" layoutY="132.0" prefHeight="31.0" prefWidth="216.0" promptText="User ID:-" style="-fx-background-color: #EFF5F5;" unFocusColor="#e8dede" />
+      <JFXTextField fx:id="txtUserName" layoutX="50.0" layoutY="203.0" prefHeight="31.0" prefWidth="216.0" promptText="User Name:-" style="-fx-background-color: #EFF5F5;" unFocusColor="#e8dede" />
+      <JFXTextField fx:id="txtPassword" layoutX="504.0" layoutY="132.0" prefHeight="31.0" prefWidth="216.0" promptText="Password:-" style="-fx-background-color: #EFF5F5;" unFocusColor="#e8dede" />
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="496.0" layoutY="219.0" onAction="#btnSaveOnAction" prefHeight="39.0" prefWidth="112.0" style="-fx-background-color: #0E3EDA; -fx-background-radius: 10;" text="Save" textFill="#d6d3c7">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="634.0" layoutY="219.0" onAction="#btnDeleteOnAction" prefHeight="39.0" prefWidth="112.0" style="-fx-background-color: #FF2626; -fx-background-radius: 10;" text="Delete" textFill="#d6d3c7">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblLoginDetails" layoutX="50.0" layoutY="274.0" prefHeight="280.0" prefWidth="701.0" style="-fx-border-color: #BB8760; -fx-background-color: #F6DFEB;">
+        <columns>
+          <TableColumn fx:id="colUserId" prefWidth="229.0" text="User ID" />
+          <TableColumn fx:id="colUserName" prefWidth="241.0" text="User Name" />
+            <TableColumn fx:id="colPassword" prefWidth="225.0" text="Password" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

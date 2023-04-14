@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="KeyMoneyContent" prefHeight="594.0" prefWidth="818.0" style="-fx-background-color: #3C2C3E;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel.controller.KeyMoneyFormController">
+   <children>
+      <Label layoutX="24.0" layoutY="24.0" style="-fx-border-color: #191825;" text="Key-Money Details" textFill="#979ea1">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="29.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="24.0" layoutY="70.0" prefHeight="17.0" prefWidth="260.0" text="Find who haven't payed Key money yet..." textFill="#c9acac">
+         <font>
+            <Font name="Bernard MT Condensed" size="14.0" />
+         </font>
+      </Label>
+      <Line endX="735.0" layoutX="82.0" layoutY="94.0" startX="-77.0" stroke="#30b986" />
+      <TableView fx:id="tblKeyMoney" layoutX="46.0" layoutY="241.0" prefHeight="280.0" prefWidth="701.0" style="-fx-border-color: #BB8760; -fx-background-color: #F6DFEB;">
+         <columns>
+            <TableColumn fx:id="colStId" prefWidth="229.0" text="Student ID" />
+            <TableColumn fx:id="colStName" prefWidth="241.0" text="Student Name" />
+            <TableColumn fx:id="colStatus" prefWidth="225.0" text="Status" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
